@@ -3,13 +3,15 @@ GEM
   specs:
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
+    minitest (5.7.0)
     multipart-post (2.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  faraday
+  faraday (~> 0.9.1)
+  minitest (~> 5.7.0)
 
 BUNDLED WITH
    1.10.4

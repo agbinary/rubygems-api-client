@@ -14,7 +14,7 @@ module Client
     connection = Faraday.new
     response = connection.get do |req|
       req.url 'https://rubygems.org/api/v1/gems.json'
-      req.headers = { 'Authorization' => token   }
+      req.headers = { 'Authorization' => token }
     end
     JSON.parse(response.body)
   end
